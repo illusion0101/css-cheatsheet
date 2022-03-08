@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-title">
+            <div class="sign-css">css</div>
+            <div class="sign-cheatsheet">cheatsheet</div>
+        </div>
+        <div class="nav-main">
+            <div class="nav-members"><a href="#contents">contents</a></div>
+            <div class="nav-qsociety"><a href="#">github</a></div>
+            <div class="nav-gallery"><a href="https://github.com/Shuvam586" target="_blank">shuvam586</a></div>
+        </div>
+    </nav>
+
+    <section class="contents" id="contents">
+        <div class="section-heading">contents</div>
+        <div class="content-content">
+            <div class="content-pack">
+                <div class="content-text">
+                    <a href="#margin">margin</a>
+                    <a href="#padding">padding</a>
+                    <a href="#border">border</a>
+                    <a href="#display">display</a>
+                    <a href="#align">align</a>
+                    <a href="#fonts">fonts</a>
+                    <a href="#colors">colors</a>
+                    <a href="#misc">misc</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin" id="margin">
+        <div class="section-heading">margins</div>
+        <div class="margin-content">
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="no-margin margin-example" style="margin: 0;"></div>
+                </div>
+                <div class="margin-text">margin: 0;</div>
+            </div>
+
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="margin-auto margin-example" style="margin: auto;"></div>
+                </div>
+                <div class="margin-text">margin: auto;</div>
+            </div>
+
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="margin-center margin-example" style="margin: auto; margin-top: 5vh; margin-bottom: 5vh;"></div>
+                </div>
+                <div class="margin-text">margin: auto; margin-top: 5vh; margin-bottom: 5vh;</div>
+            </div>
+
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="margin-top margin-example" style="margin-top: 7vh;"></div>
+                </div>
+                <div class="margin-text">margin-top: 7vh;</div>
+            </div>
+
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="margin-left margin-example" style="margin-left: 12vh;"></div>
+                </div>
+                <div class="margin-text">margin-left: 12vh;</div>
+            </div>
+
+            <div class="margin-pack">
+                <div class="margin-example-box">
+                    <div class="margin-right margin-example" style="float: right; margin-right: 12vh;"></div>
+                </div>
+                <div class="margin-text">float: right; margin-right: 12vh;</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding" id="padding">
+        <div class="section-heading">paddings</div>
+        <div class="padding-content">
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="no-padding padding-example" style="padding: 0;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding: 0;</div>
+            </div>
+
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="padding-all padding-example" style="padding: 1vw; margin-top: 9vh;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding: 2vw;</div>
+            </div>
+            
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="padding-left padding-example" style="padding-left: 2vw;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding-left: 2vw;</div>
+            </div>
+
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="padding-right padding-example" style="padding-right: 2vw;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding-right: 2vw;</div>
+            </div>
+
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="padding-top padding-example" style="padding-top: 2vw; margin-top: 9vh;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding-top: 2vw;</div>
+            </div>
+
+            <div class="padding-pack">
+                <div class="padding-example-box">
+                    <div class="padding-bottom padding-example" style="padding-bottom: 2vw; margin-top: 9vh;">
+                        <div class="padding-inner-example"></div>
+                    </div>
+                </div>
+                <div class="padding-text">padding-bottom: 2vw;</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border" id="border">
+        <div class="section-heading">borders</div>
+        <div class="border-content">
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 0; margin-top: 10vh;"></div>
+                </div>
+                <div class="border-text">border: 0;</div>
+            </div>
+
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 2vh solid #ffffff; margin-top: 8vh;"></div>
+                </div>
+                <div class="border-text">border: 2vh solid #ffffff;</div>
+            </div>
+
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 2vh dotted #ffffff; margin-top: 8vh;"></div>
+                </div>
+                <div class="border-text">border: 2vh dotted #ffffff;</div>
+            </div>
+
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 2vh dashed #ffffff; margin-top: 8vh;"></div>
+                </div>
+                <div class="border-text">border: 2vh dashed #ffffff;</div>
+            </div>
+
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 2vh double #ffffff; margin-top: 8vh;"></div>
+                </div>
+                <div class="border-text">border: 2vh double #ffffff;</div>
+            </div>
+
+            <div class="border-pack">
+                <div class="border-example-box">
+                    <div class="no-border border-example" style="border: 2vh groove #ffffff; margin-top: 8vh;"></div>
+                </div>
+                <div class="border-text">border: 2vh groove #ffffff;</div>
+        </div>
+    </section>
+
+    <section class="display" id="display">
+        <div class="section-heading">display</div>
+        <div class="display-content">
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-display display-example" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;</div>
+            </div>
+
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-display display-example" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;</div>
+            </div>
+
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-flex display-example" style="display: flex;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 0vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 0vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 0vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 0vh 0vh 1vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: flex;</div>
+            </div>
+
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-flex display-example" style="display: flex; justify-content: space-around;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: flex; justify-content: space-around;</div>
+            </div>
+
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-flex display-example" style="display: flex; justify-content: space-between;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh 1vh 0vh 1vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: flex; justify-content: space-between;</div>
+            </div>
+
+            <div class="display-pack">
+                <div class="display-example-box">
+                    <div class="grid-flex display-example" style="display: flex; align-items: center; flex-direction: column;">
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh;"></div>
+                        <div class="display-inner-example" style="height: 10vh; width: 10vh; margin: 1vh;"></div>
+                    </div>
+                </div>
+                <div class="display-text">display: flex; align-items: center; flex-direction: column;</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="align" id="align">
+        <div class="section-heading">alignments</div>
+        <div class="align-content">
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="unset-align align-example" style="text-align: unset;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: unset;</div>
+            </div>
+
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="left-align align-example" style="text-align: left;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: left;</div>
+            </div>
+
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="right-align align-example" style="text-align: right;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: right;</div>
+            </div>
+
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="right-align align-example" style="text-align: center;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: center;</div>
+            </div>
+
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="right-align align-example" style="text-align: justify;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: justify</div>
+            </div>
+
+            <div class="align-pack">
+                <div class="align-example-box">
+                    <div class="right-align align-example" style="text-align:end;">
+                        Almost before we knew it, we had left the ground.
+                    </div>
+                </div>
+                <div class="padding-text">text-align: end</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fonts" id="fonts">
+        <div class="section-heading">fonts</div>
+        <div class="font-content">
+            <div class="font-pack" style="font-family: 'Montserrat', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a></div>
+            </div>
+            <div class="font-pack" style="font-family: 'Sora', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Sora">Sora</a></div>
+            </div>
+            <div class="font-pack" style="font-family: 'Lato', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Lato">Lato</a></div>
+            </div>
+            <div class="font-pack" style="font-family: 'Open Sans', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a></div>
+            </div>
+            <div class="font-pack" style="font-family: 'Raleway', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Raleway">Raleway</a></div>
+            </div>
+            <div class="font-pack" style="font-family: 'Source Code Pro', sans-serif;">
+                <div class="font-example-box">
+                    <div class="font-example" style="font-weight: 100;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 200;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 300;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                    <div class="font-example" style="font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-text"><a href="https://fonts.google.com/specimen/Source+Code+Pro">Source Code Pro</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colors" id="colors">
+        <div class="section-heading">colors</div>
+        <div class="color-content">
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color: aliceblue;"></div>
+                </div>
+                <div class="color-text">aliceblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:antiquewhite;"></div>
+                </div>
+                <div class="color-text">antiquewhite</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:aqua;"></div>
+                </div>
+                <div class="color-text">aqua</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:aquamarine;"></div>
+                </div>
+                <div class="color-text">aquamarine</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:azure;"></div>
+                </div>
+                <div class="color-text">azure</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:beige;"></div>
+                </div>
+                <div class="color-text">beige</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:bisque;"></div>
+                </div>
+                <div class="color-text">bisque</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:black;"></div>
+                </div>
+                <div class="color-text">black</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:blanchedalmond;"></div>
+                </div>
+                <div class="color-text">blanchedalmond</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:blue;"></div>
+                </div>
+                <div class="color-text">blue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:blueviolet;"></div>
+                </div>
+                <div class="color-text">blueviolet</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:brown;"></div>
+                </div>
+                <div class="color-text">brown</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:burlywood;"></div>
+                </div>
+                <div class="color-text">burlywood</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:cadetblue;"></div>
+                </div>
+                <div class="color-text">cadetblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:chartreuse;"></div>
+                </div>
+                <div class="color-text">chartreuse</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:chocolate;"></div>
+                </div>
+                <div class="color-text">chocolate</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color: coral;"></div>
+                </div>
+                <div class="color-text">coral</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:cornflowerblue;"></div>
+                </div>
+                <div class="color-text">cornflowerblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:cornsilk;"></div>
+                </div>
+                <div class="color-text">cornsilk</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:crimson;"></div>
+                </div>
+                <div class="color-text">crimson</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color: cyan;"></div>
+                </div>
+                <div class="color-text">cyan</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkblue;"></div>
+                </div>
+                <div class="color-text">darkblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkcyan;"></div>
+                </div>
+                <div class="color-text">darkcyan</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkgoldenrod;"></div>
+                </div>
+                <div class="color-text">darkgoldenrod</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkgray;"></div>
+                </div>
+                <div class="color-text">darkgray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkgreen;"></div>
+                </div>
+                <div class="color-text">darkgreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkgrey;"></div>
+                </div>
+                <div class="color-text">darkgrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkkhaki;"></div>
+                </div>
+                <div class="color-text">darkkhaki</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkmagenta;"></div>
+                </div>
+                <div class="color-text">darkmagenta</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkolivegreen;"></div>
+                </div>
+                <div class="color-text">darkolivegreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkorange;"></div>
+                </div>
+                <div class="color-text">darkorange</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkorchid;"></div>
+                </div>
+                <div class="color-text">darkorchid</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkred;"></div>
+                </div>
+                <div class="color-text">darkred</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darksalmon;"></div>
+                </div>
+                <div class="color-text">darksalmon</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkseagreen;"></div>
+                </div>
+                <div class="color-text">darkseagreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkslateblue;"></div>
+                </div>
+                <div class="color-text">darkslateblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkslategray;"></div>
+                </div>
+                <div class="color-text">darkslategray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkslategrey;"></div>
+                </div>
+                <div class="color-text">darkslategrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkturquoise;"></div>
+                </div>
+                <div class="color-text">darkturquoise</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:darkviolet;"></div>
+                </div>
+                <div class="color-text">darkviolet</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:deeppink;"></div>
+                </div>
+                <div class="color-text">deeppink</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:deepskyblue;"></div>
+                </div>
+                <div class="color-text">deepskyblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:dimgray;"></div>
+                </div>
+                <div class="color-text">dimgray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:dimgrey;"></div>
+                </div>
+                <div class="color-text">dimgrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:dodgerblue;"></div>
+                </div>
+                <div class="color-text">dodgerblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:firebrick;"></div>
+                </div>
+                <div class="color-text">firebrick</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:floralwhite;"></div>
+                </div>
+                <div class="color-text">floralwhite</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:forestgreen;"></div>
+                </div>
+                <div class="color-text">forestgreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:fuchsia;"></div>
+                </div>
+                <div class="color-text">fuchsia</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:gainsboro;"></div>
+                </div>
+                <div class="color-text">gainsboro</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:ghostwhite;"></div>
+                </div>
+                <div class="color-text">ghostwhite</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:gold;"></div>
+                </div>
+                <div class="color-text">gold</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:goldenrod;"></div>
+                </div>
+                <div class="color-text">goldenrod</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:gray;"></div>
+                </div>
+                <div class="color-text">gray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:green;"></div>
+                </div>
+                <div class="color-text">green</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:greenyellow;"></div>
+                </div>
+                <div class="color-text">greenyellow</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:grey;"></div>
+                </div>
+                <div class="color-text">grey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:honeydew;"></div>
+                </div>
+                <div class="color-text">honeydew</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:hotpink;"></div>
+                </div>
+                <div class="color-text">hotpink</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:indianred;"></div>
+                </div>
+                <div class="color-text">indianred</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:indigo;"></div>
+                </div>
+                <div class="color-text">indigo</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:ivory;"></div>
+                </div>
+                <div class="color-text">ivory</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:khaki;"></div>
+                </div>
+                <div class="color-text">khaki</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lavender;"></div>
+                </div>
+                <div class="color-text">lavender</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lavenderblush;"></div>
+                </div>
+                <div class="color-text">lavenderblush</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lawngreen;"></div>
+                </div>
+                <div class="color-text">lawngreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lemonchiffon;"></div>
+                </div>
+                <div class="color-text">lemonchiffon</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightblue;"></div>
+                </div>
+                <div class="color-text">lightblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightcoral;"></div>
+                </div>
+                <div class="color-text">lightcoral</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightcyan;"></div>
+                </div>
+                <div class="color-text">lightcyan</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightgoldenrodyellow;"></div>
+                </div>
+                <div class="color-text">lightgoldenrodyellow</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightgray;"></div>
+                </div>
+                <div class="color-text">lightgray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightgreen;"></div>
+                </div>
+                <div class="color-text">lightgreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightgrey;"></div>
+                </div>
+                <div class="color-text">lightgrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightpink;"></div>
+                </div>
+                <div class="color-text">lightpink</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightsalmon;"></div>
+                </div>
+                <div class="color-text">lightsalmon</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightseagreen;"></div>
+                </div>
+                <div class="color-text">lightseagreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightskyblue;"></div>
+                </div>
+                <div class="color-text">lightskyblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightslategray;"></div>
+                </div>
+                <div class="color-text">lightslategray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightslategrey;"></div>
+                </div>
+                <div class="color-text">lightslategrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightsteelblue;"></div>
+                </div>
+                <div class="color-text">lightsteelblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lightyellow;"></div>
+                </div>
+                <div class="color-text">lightyellow</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:lime;"></div>
+                </div>
+                <div class="color-text">lime</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:limegreen;"></div>
+                </div>
+                <div class="color-text">limegreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:linen;"></div>
+                </div>
+                <div class="color-text">linen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:magenta;"></div>
+                </div>
+                <div class="color-text">magenta</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:maroon;"></div>
+                </div>
+                <div class="color-text">maroon</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumaquamarine;"></div>
+                </div>
+                <div class="color-text">mediumaquamarine</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumblue;"></div>
+                </div>
+                <div class="color-text">mediumblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumorchid;"></div>
+                </div>
+                <div class="color-text">mediumorchid</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumpurple;"></div>
+                </div>
+                <div class="color-text">mediumpurple</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumseagreen;"></div>
+                </div>
+                <div class="color-text">mediumseagreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumslateblue;"></div>
+                </div>
+                <div class="color-text">mediumslateblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumspringgreen;"></div>
+                </div>
+                <div class="color-text">mediumspringgreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumturquoise;"></div>
+                </div>
+                <div class="color-text">mediumturquoise</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mediumvioletred;"></div>
+                </div>
+                <div class="color-text">mediumvioletred</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:midnightblue;"></div>
+                </div>
+                <div class="color-text">midnightblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mintcream;"></div>
+                </div>
+                <div class="color-text">mintcream</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:mistyrose;"></div>
+                </div>
+                <div class="color-text">mistyrose</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:moccasin;"></div>
+                </div>
+                <div class="color-text">moccasin</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:navajowhite;"></div>
+                </div>
+                <div class="color-text">navajowhite</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:navy;"></div>
+                </div>
+                <div class="color-text">navy</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:oldlace;"></div>
+                </div>
+                <div class="color-text">oldlace</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:olive;"></div>
+                </div>
+                <div class="color-text">olive</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:olivedrab;"></div>
+                </div>
+                <div class="color-text">olivedrab</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:orange;"></div>
+                </div>
+                <div class="color-text">orange</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:orangered;"></div>
+                </div>
+                <div class="color-text">orangered</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:orchid;"></div>
+                </div>
+                <div class="color-text">orchid</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:palegoldenrod;"></div>
+                </div>
+                <div class="color-text">palegoldenrod</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:palegreen;"></div>
+                </div>
+                <div class="color-text">palegreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:paleturquoise;"></div>
+                </div>
+                <div class="color-text">paleturquoise</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:palevioletred;"></div>
+                </div>
+                <div class="color-text">palevioletred</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:papayawhip;"></div>
+                </div>
+                <div class="color-text">papayawhip</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:peachpuff;"></div>
+                </div>
+                <div class="color-text">peachpuff</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:peru;"></div>
+                </div>
+                <div class="color-text">peru</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:pink;"></div>
+                </div>
+                <div class="color-text">pink</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:plum;"></div>
+                </div>
+                <div class="color-text">plum</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:powderblue;"></div>
+                </div>
+                <div class="color-text">powderblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:purple;"></div>
+                </div>
+                <div class="color-text">purple</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:rebeccapurple;"></div>
+                </div>
+                <div class="color-text">rebeccapurple</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:red;"></div>
+                </div>
+                <div class="color-text">red</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:rosybrown;"></div>
+                </div>
+                <div class="color-text">rosybrown</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:royalblue;"></div>
+                </div>
+                <div class="color-text">royalblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:saddlebrown;"></div>
+                </div>
+                <div class="color-text">saddlebrown</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:salmon;"></div>
+                </div>
+                <div class="color-text">salmon</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:sandybrown;"></div>
+                </div>
+                <div class="color-text">sandybrown</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:seagreen;"></div>
+                </div>
+                <div class="color-text">seagreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:seashell;"></div>
+                </div>
+                <div class="color-text">seashell</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:sienna;"></div>
+                </div>
+                <div class="color-text">sienna</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:silver;"></div>
+                </div>
+                <div class="color-text">silver</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:skyblue;"></div>
+                </div>
+                <div class="color-text">skyblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:slateblue;"></div>
+                </div>
+                <div class="color-text">slateblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:slategray;"></div>
+                </div>
+                <div class="color-text">slategray</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:slategrey;"></div>
+                </div>
+                <div class="color-text">slategrey</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:snow;"></div>
+                </div>
+                <div class="color-text">snow</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:springgreen;"></div>
+                </div>
+                <div class="color-text">springgreen</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:steelblue;"></div>
+                </div>
+                <div class="color-text">steelblue</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:tan;"></div>
+                </div>
+                <div class="color-text">tan</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:teal;"></div>
+                </div>
+                <div class="color-text">teal</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:thistle;"></div>
+                </div>
+                <div class="color-text">thistle</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color: tomato;"></div>
+                </div>
+                <div class="color-text">tomato</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:turquoise;"></div>
+                </div>
+                <div class="color-text">turquoise</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:violet;"></div>
+                </div>
+                <div class="color-text">violet</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:wheat;"></div>
+                </div>
+                <div class="color-text">wheat</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:white;"></div>
+                </div>
+                <div class="color-text">white</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:whitesmoke;"></div>
+                </div>
+                <div class="color-text">whitesmoke</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:yellow;"></div>
+                </div>
+                <div class="color-text">yellow</div>
+            </div>
+            <div class="color-pack">
+                <div class="color-example-box">
+                    <div class="color-example" style="background-color:yellowgreen;"></div>
+                </div>
+                <div class="color-text">yellowgreen</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="misc" id="misc">
+        <div class="section-heading">misc</div>
+        <div class="misc-content">
+            <div class="misc-pack">
+                <div class="misc-example-box">
+                    <div class="misc-example" style="font-weight: 100;">
+                        <div style="margin-top: 4vh;">body::-webkit-scrollbar {</div>
+                        <div style="margin-left: 8vh;">    display: none;</div>
+                        <div>}</div>
+                        
+                        <div>body {</div>
+                        <div style="margin-left: 8vh;">    -ms-overflow-style: none;</div>
+                        <div style="margin-left: 8vh;">    scrollbar-width: none;</div>
+                        <div>}</div>
+                    </div>
+                </div>
+                <div class="misc-text">disabling the scroll-bar</div>
+            </div>
+
+            <div class="misc-pack">
+                <div class="misc-example-box">
+                    <div class="misc-example" style="font-weight: 100;">
+                        <div style="margin-top: 4vh;">*, *::before, *::after {</div>
+                        <div style="margin-left: 8vh;">    padding: 0;</div>
+                        <div style="margin-left: 8vh;">    margin: 0;</div>
+                        <div style="margin-left: 8vh;">    border: 0;</div>
+                        <div>}</div>
+                    </div>
+                </div>
+                <div class="misc-text">general CSS reset</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
