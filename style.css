@@ -33,6 +33,7 @@ a {
 .footer a {
     text-decoration: none;
     transition: all 200ms ease-in-out;
+    text-align: center;
 }
 
 .footer a:hover {
