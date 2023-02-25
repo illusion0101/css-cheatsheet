@@ -30,6 +30,15 @@ a {
     color: inherit;
 }
 
+.footer a {
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 nav {
     color: #ffffff;
     position: fixed;
